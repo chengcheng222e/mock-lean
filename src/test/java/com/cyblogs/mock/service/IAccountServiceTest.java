@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
@@ -14,7 +15,9 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class IAccountServiceTest {
 
-    @Resource
+
+    // @Resource
+    @MockBean
     private IAccountService accountService;
 
     @Test
