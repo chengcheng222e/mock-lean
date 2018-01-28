@@ -10,17 +10,17 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Account {
+public class School {
 
     private Long id;
     private String name;
-    private double money;
+    private String address;
 
-    public Account() {
+    public School() {
     }
 
-    public Account(String name, double money) {
+    public School(String name, String address) {
         this.name = name;
-        this.money = money;
+        this.address = address;
     }
 }
